@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/oaedward/Dropbox/Mac/Documents/05. Web-Dev-Portfolio/03. Tutorial-Pojects/Python/pytut/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from sqlparse.__main__ import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
